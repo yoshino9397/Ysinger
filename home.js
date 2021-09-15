@@ -1,8 +1,3 @@
-// var students = [
-//   {students:"Matt",score:80},
-//   {students:"Simon",score:45}
-// ];
-
 var Matt = 80;
 var Simon = 45;
 var students =["Matt","Simon"]
