@@ -3,6 +3,192 @@ body:before {
   background: white;
 }
 
+@media (min-width: 40em) {
+  body:before menu-4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4%;
+  }
+  body:before menu-4 * {
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  body:before menu-4 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    overflow: hidden;
+  }
+  body:before menu-4 a {
+    font-family: 'Papyrus',sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0.3em 0;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  body:before menu-4 a:before,
+  body:before menu-4 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  body:before menu-4 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e9e95c;
+  }
+  body:before menu-4 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  body:before menu-4 li:hover a,
+  body:before menu-4 .current a {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@media (min-width: 55em) {
+  menu-4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4%;
+  }
+  menu-4 * {
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  menu-4 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    overflow: hidden;
+  }
+  menu-4 a {
+    font-family: 'Papyrus',sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0.3em 0;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  menu-4 a:before,
+  menu-4 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  menu-4 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e9e95c;
+  }
+  menu-4 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  menu-4 li:hover a,
+  menu-4 .current a {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@media (min-width: 70em) {
+  menu-4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4%;
+  }
+  menu-4 * {
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  menu-4 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    overflow: hidden;
+  }
+  menu-4 a {
+    font-family: 'Papyrus',sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0.3em 0;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  menu-4 a:before,
+  menu-4 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  menu-4 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e9e95c;
+  }
+  menu-4 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  menu-4 li:hover a,
+  menu-4 .current a {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
 body {
   background-color: #fff;
   font-family: "Josefin Slab", serif;

@@ -1,5 +1,4 @@
 $breakpoints: (
-  xsmall: 20em,
   small: 30em,
   medium: 40em,
   large: 55em,
@@ -25,21 +24,203 @@ $background-color: white;
 body:before {
   background: $background-color;
 
-  @include wider-than(xsmall) {
-  }
-
   @include wider-than(small) {
   }
 
   @include wider-than(medium) {
+    menu-4 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 4% ;
+
+    * {
+      
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+    li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0 1em;
+      overflow: hidden;
+    }
+    a {
+      font-family: 'Papyrus',sans-serif;
+      font-size: 18px;
+      font-weight: bolder;
+      padding: 0.3em 0;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0;
+      text-decoration: none;
+    }
+    a:before,
+    a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    a:before {
+      bottom: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      content: "";
+      background-color: #e9e95c;
+    }
+      a:after {
+      padding: 0.3em 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+    }
+    li:hover a,
+    .current a {
+      transform: translateY(100%);
+    }
+  }
+}
   }
 
   @include wider-than(large) {
-  }
+    menu-4 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 4% ;
 
-  @include wider-than(xlarge) {
+    * {
+      
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+    li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0 1em;
+      overflow: hidden;
+    }
+    a {
+      font-family: 'Papyrus',sans-serif;
+      font-size: 18px;
+      font-weight: bolder;
+      padding: 0.3em 0;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0;
+      text-decoration: none;
+    }
+    a:before,
+    a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    a:before {
+      bottom: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      content: "";
+      background-color: #e9e95c;
+    }
+      a:after {
+      padding: 0.3em 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+    }
+    li:hover a,
+    .current a {
+      transform: translateY(100%);
+    }
   }
 }
+
+
+  @include wider-than(xlarge) {
+    menu-4 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 4% ;
+
+    * {
+      
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+    li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0 1em;
+      overflow: hidden;
+    }
+    a {
+      font-family: 'Papyrus',sans-serif;
+      font-size: 18px;
+      font-weight: bolder;
+      padding: 0.3em 0;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0;
+      text-decoration: none;
+    }
+    a:before,
+    a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    a:before {
+      bottom: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      content: "";
+      background-color: #e9e95c;
+    }
+      a:after {
+      padding: 0.3em 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+    }
+    li:hover a,
+    .current a {
+      transform: translateY(100%);
+    }
+  }
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:700,300|Josefin+Sans:300);
 
