@@ -1,7 +1,10 @@
-// let menu =["Facebook","Soundscloud","Youtube"];
-
-// for (var i = 0; i < menu.length; i++) {
-//   var li = document.createElement('li');
-//   li.textContent = menu[i];
-//   document.getElementById('list').appendChild(li);
-// }
+$(function () {
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".mv").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) {
+      $(".photo1").addClass("headerColorScroll");
+    } else {
+      $(".photo1").removeClass("headerColorScroll");
+    }
+  });
+});
