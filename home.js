@@ -6,28 +6,24 @@
 //     } else {
 //       $(".photo1").removeClass("headerColorScroll");
 //     }
-//   });
+//   })
 // });
 
-const scrollEvent = function () {
-  window.addEventListener("scroll", function () {
-    // スクロール量の取得
-    let scrollValue = window.pageYOffset;
-    // 要素の取得
-    let scrollEle = document.querySelector(".scroll");
-    //取得した要素のtop値の取得 + スクロール量
-    let scrollTop = scrollEle.getBoundingClientRect().top + scrollValue;
-    // 画面の高さを取得
-    let windowHeight = window.innerHeight;
+// const scrollEvent = function () {
+//   window.scroll(function () {
+//    ('.fadein').each(function(){
+    
+//     let targetElement = this.offset().top;
+    
+//     let scroll = widow.scrollTop();
+    
+//     let windowHeight = window.height();
 
-    // はみ出させる値(変更可能)
-    let value = 100;
+//     if (scroll>targetElement - windowHeight + 80) {
+//       this.addClass('scrollin');
+//     }
+//   });
+// });
+// }
+// scrollEvent();
 
-    //条件設定
-    if (scrollValue > scrollTop - windowHeight + value) {
-      scrollEle.classList.add("js-fade");
-    }
-  });
-};
-
-scrollEvent();
