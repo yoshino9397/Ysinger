@@ -16,8 +16,29 @@ nav {
 
 @media screen and (min-width: 1000px) {
   nav {
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    margin: 16% 0 0 0;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: rotate(-90deg) translateX(-100%);
+            transform: rotate(-90deg) translateX(-100%);
+    top: 20%;
+    z-index: 999;
+  }
+}
+
+nav li {
+  padding: 0 2%;
+  color: black;
+  font-size: 1em;
+  font-family: "Avenir Next Condensed", sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  nav li {
+    margin: 5% 30% 0 0;
+    font-size: 1.8em;
   }
 }
 
@@ -32,8 +53,6 @@ nav {
     margin: 0;
     padding: 0;
     font-size: 6em;
-    font-family: "Avenir Next Condensed", sans-serif;
-    font-weight: 260;
   }
 }
 
@@ -58,6 +77,10 @@ img {
   -o-filter: grayscale(35%);
   filter: grayscale(35%);
   opacity: 85%;
+}
+
+.photo1 {
+  z-index: 1;
 }
 
 .disco img {
@@ -122,5 +145,65 @@ footer a {
 
 span {
   font-size: 1.7em;
+}
+
+.menuVar {
+  text-transform: uppercase;
+}
+
+.menuVar * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menuVar li {
+  display: inline-block;
+  list-style: outside none none;
+  overflow: hidden;
+}
+
+.menuVar a {
+  font-family: 'Papyrus',sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0.3em 0;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.menuVar a:before,
+.menuVar a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menuVar a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e9e95c;
+}
+
+.menuVar a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.menuVar li:hover a,
+.menuVar.current a {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 /*# sourceMappingURL=web.css.map */

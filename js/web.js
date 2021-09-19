@@ -10,6 +10,7 @@ menu.forEach(function (info) {
   li.innerHTML += info;
 });
 
+
 let h1 = "YURIA WAKAI";
 let h2 = "Soprano Singer";
 document.getElementById("name").innerHTML = h1;
