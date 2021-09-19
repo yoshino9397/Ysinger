@@ -37,9 +37,12 @@ body {
 
 @media screen and (min-width: 1000px) {
   .navweb {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style: none;
     position: fixed;
-    margin: 16% 0 0 0;
+    margin: 32% 0 0 0;
     -webkit-transform-origin: top left;
             transform-origin: top left;
     -webkit-transform: rotate(-90deg) translateX(-100%);
@@ -51,8 +54,27 @@ body {
 
 @media screen and (min-width: 1000px) {
   .navweb li {
-    margin: 5% 30% 0 0;
-    font-size: 1.8em;
+    margin: 9% 45% 0 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  a {
+    color: black;
+    font-size: 2.1em;
+    font-family: "Avenir Next Condensed", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  a:hover {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
@@ -64,7 +86,7 @@ body {
 
 @media screen and (min-width: 1000px) {
   .wakai {
-    margin: 0;
+    margin: -20% 0 0 0;
     padding: 0;
     font-size: 6em;
   }
@@ -95,6 +117,16 @@ img {
 
 .photo1 {
   z-index: 1;
+}
+
+@media screen and (min-width: 1000px) {
+  .photo1 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
+            clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .disco img {
