@@ -21,26 +21,37 @@ body {
   margin: 0;
   background-color: white;
 }
-nav {
+.navphone {
   display: flex;
   list-style: $line-style;
-  margin: -1% 0 3% -10%;
+  margin: 3% 0 3% 1%;
   padding: 0;
   text-align: left;
   @include mq("lg") {
-    position: fixed;
-    margin: 16% 0 0 0;
-    transform-origin: top left;
-    transform: rotate(-90deg) translateX(-100%);
-    top: 20%;
-    z-index: 999;
+    display: none;
   }
   li {
     padding: 0 2%;
+  }
+  a {
     color: black;
     font-size: 1em;
     font-family: "Avenir Next Condensed", sans-serif;
     text-decoration: $text-decoration;
+  }
+}
+.navweb {
+  display: none;
+  @include mq("lg") {
+    display: inline-block;
+    position: fixed;
+    margin: 16% 0 0 0;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+    top: 0%;
+    z-index: 999;
+  }
+  li {
     @include mq("lg") {
       margin: 5% 30% 0 0;
       font-size: 1.8em;
@@ -137,57 +148,6 @@ span {
   font-size: 1.7em;
 }
 
-.menuVar{
-  text-transform: uppercase;
-}
-.menuVar * {
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.menuVar li {
-  display: inline-block;
-  list-style: outside none none;
-  overflow: hidden;
-}
-.menuVar a {
-  font-family: 'Papyrus',sans-serif;
-  font-size: 18px;
-  font-weight: bolder;
-  padding: 0.3em 0;
-  color: #ffffff;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin: 0;
-  text-decoration: none;
-}
-.menuVar a:before,
-.menuVar a:after {
-  position: absolute;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.menuVar a:before {
-  bottom: 100%;
-  display: block;
-  height: 3px;
-  width: 100%;
-  content: "";
-  background-color: #e9e95c;
-}
-.menuVar a:after {
-  padding: 0.3em 0;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  content: attr(data-hover);
-  color: #ffffff;
-  white-space: nowrap;
-}
-.menuVar li:hover a,
-.menuVar.current a {
-  transform: translateY(100%);
-}
 // .fadein{
 //   opacity: 0;
 //   transform: translate(0.80px);
