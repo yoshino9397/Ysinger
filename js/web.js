@@ -1,15 +1,15 @@
-let menu = ["HOME", "LESSON", "STADIO", "CONTACT"],
-  nav = document.createElement("nav");
+// let menu = ["HOME", "LESSON", "STADIO", "CONTACT"];
+// let links = ["https://www.remijousselme.com/", "https://www.youtube.com/watch?v=fnPn6At3v28&list=RDMMXs97rEV1EBM&index=4", "https://www.youtube.com/watch?v=om-a-AHXXZo", "w3schools.com/jsref/met_element_addeventlistener.asp"];
+//   nav = document.createElement("nav");
 
-document.getElementById("menuVar").appendChild(nav);
+// document.getElementById("menuVar").appendChild(nav);
 
-menu.forEach(function (info) {
-  let li = document.createElement("li");
-  nav.appendChild(li);
+// menu.forEach(function (info) {
+//   let lia = document.createElement("li");
+//   nav.appendChild(lia);
 
-  li.innerHTML += info;
-});
-
+//   lia.innerHTML += info;
+// });
 
 let h1 = "YURIA WAKAI";
 let h2 = "Soprano Singer";
