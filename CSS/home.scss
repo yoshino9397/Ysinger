@@ -1,5 +1,5 @@
 $breakpoints: (
-  "sm": "screen and (min-width: 400px)",
+  "sm": "screen and (min-width: 350px)",
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 1000px)",
   "xl": "screen and (min-width: 1200px)",
@@ -14,6 +14,7 @@ $breakpoints: (
 $line-style: none;
 $text-decoration: none;
 $margin: 5% 0 0 5%;
+$z-index: 1;
 
 body {
   padding: 0;
@@ -49,12 +50,13 @@ nav {
 h1 {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
-  font-weight: 230;
+  font-weight: 260;
+
 }
 h2 {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
-  font-weight: 230;
+  font-weight: 240;
   margin: -21% 0 10% 0;
 }
 h3 {
@@ -63,49 +65,28 @@ h3 {
   margin: 30% 0 0 5%;
   padding: 0;
 }
-.photo1 {
-  z-index: 1;
+img {
+  -webkit-filter: grayscale(35%);
+  -moz-filter: grayscale(35%);
+  -ms-filter: grayscale(35%);
+  -o-filter: grayscale(35%);
+  filter: grayscale(35%);
+  opacity: 85%;
 }
-.d1 {
-  margin: $margin;
+.disco {
+  img {
+    margin: $margin;
+  }
   p {
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
-    margin: -21% 0 30% 15%;
+    margin: -21% 0 30% 20%;
     padding: 0;
+    position: absolute;
   }
 }
-.d2 {
-  margin: $margin;
-  p {
-    font-size: 1em;
-    font-family: "Courier", sans-serif;
-    font-weight: bold;
-    margin: -21% 0 30% 15%;
-    padding: 0;
-  }
-}
-.d3 {
-  margin: $margin;
-  p {
-    font-size: 1em;
-    font-family: "Courier", sans-serif;
-    font-weight: bold;
-    margin: -21% 0 30% 15%;
-    padding: 0;
-  }
-}
-.d4 {
-  margin: $margin;
-  p {
-    font-size: 1em;
-    font-family: "Courier", sans-serif;
-    font-weight: bold;
-    margin: -21% 0 30% 15%;
-    padding: 0;
-  }
-}
+
 .photo2 {
   margin: 0 2% 2%;
   padding: 5%;
@@ -144,18 +125,16 @@ footer {
     font-size: 1em;
   }
 }
+span{
+  font-size: 1.7em;
+}
 
-// .mv {
-//   height: 290px;
+// .fadein{
+//   opacity: 0;
+//   transform: translate(0.80px);
+//   transition: all 1.5s;
 // }
-// .contents {
-//   height: 300px;
-// }
-// .header.headerColorScroll {
-//   -webkit-filter: grayscale(100%);
-//   -moz-filter: grayscale(100%);
-//   -ms-filter: grayscale(100%);
-//   -o-filter: grayscale(100%);
-//   filter: grayscale(100%);
-//   transition: 0.4s ease-out;
+// .fadein.scrollin{
+//   opacity: 1;
+//   transform: translate(0,0);
 // }
