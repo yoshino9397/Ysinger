@@ -20,6 +20,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
+  // @include mq("lg") {
+  //   height: 5000px;
+  // }
 }
 .navphone {
   display: flex;
@@ -80,51 +83,98 @@ a {
   font-family: "Avenir Next Condensed", sans-serif;
   font-weight: 260;
   @include mq("lg") {
-    margin: -20% 0 0 0;
+    margin: -30% 0 0 17%;
     padding: 0;
     font-size: 6em;
+    letter-spacing: 0.15em;
+    position: absolute;
+    z-index: 999;
   }
 }
-h2 {
+.singer {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
   font-weight: 240;
   margin: -21% 0 10% 0;
+  @include mq("lg") {
+    margin: -23% 0 0 17%;
+    padding: 0;
+    font-size: 6em;
+    letter-spacing: 0.15em;
+    position: absolute;
+    font-weight: normal;
+    z-index: 3;
+  }
 }
-h3 {
+.h3a {
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
   margin: 30% 0 0 5%;
   padding: 0;
+  @include mq("lg") {
+    font-size: 3.3em;
+    font-family: "Courier", sans-serif;
+    margin: 0 0 0 17%;
+    padding: 0;
+  }
 }
 img {
-  -webkit-filter: grayscale(35%);
-  -moz-filter: grayscale(35%);
-  -ms-filter: grayscale(35%);
-  -o-filter: grayscale(35%);
-  filter: grayscale(35%);
-  opacity: 85%;
+  // -webkit-filter: grayscale(35%);
+  // -moz-filter: grayscale(35%);
+  // -ms-filter: grayscale(35%);
+  // -o-filter: grayscale(35%);
+  // filter: grayscale(35%);
+  // opacity: 85%;
+  z-index: 2;
 }
-.photo1 {
-  z-index: 1;
-  @include mq("lg"){
+
+.photo1 img {
+  @include mq("lg") {
     clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
     width: 80%;
     padding: 0;
     margin: 0;
   }
+  &:hover {
+    @include mq("lg") {
+      -webkit-filter: sepia(40%);
+      filter: sepia(40%);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+  }
 }
+
 .disco {
   img {
     margin: $margin;
+    @include mq("lg") {
+      margin: 0 0 10% 17%;
+    }
   }
-  p {
+  // ul {
+  //   @include mq("lg") {
+  //     width: 100%;
+  //     height: 30%;
+  //   }
+  // }
+  li {
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
     margin: -21% 0 30% 20%;
     padding: 0;
     position: absolute;
+    @include mq("lg") {
+      display: inline-flex;
+      position: absolute;
+      width: 100%;
+      font-size: 1em;
+      font-family: "Courier", sans-serif;
+      font-weight: bold;
+      margin: 0% 0 10% 17%;
+      padding: 0;
+    }
   }
 }
 
