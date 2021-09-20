@@ -86,41 +86,56 @@ body {
 
 @media screen and (min-width: 1000px) {
   .wakai {
-    margin: -20% 0 0 0;
+    margin: -30% 0 0 17%;
     padding: 0;
     font-size: 6em;
+    letter-spacing: 0.15em;
+    position: absolute;
+    z-index: 999;
   }
 }
 
-h2 {
+.singer {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
   font-weight: 240;
   margin: -21% 0 10% 0;
 }
 
-h3 {
+@media screen and (min-width: 1000px) {
+  .singer {
+    margin: -23% 0 0 17%;
+    padding: 0;
+    font-size: 6em;
+    letter-spacing: 0.15em;
+    position: absolute;
+    font-weight: normal;
+    z-index: 3;
+  }
+}
+
+.h3a {
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
   margin: 30% 0 0 5%;
   padding: 0;
 }
 
-img {
-  -webkit-filter: grayscale(35%);
-  -moz-filter: grayscale(35%);
-  -ms-filter: grayscale(35%);
-  -o-filter: grayscale(35%);
-  filter: grayscale(35%);
-  opacity: 85%;
+@media screen and (min-width: 1000px) {
+  .h3a {
+    font-size: 3.3em;
+    font-family: "Courier", sans-serif;
+    margin: 0 0 0 17%;
+    padding: 0;
+  }
 }
 
-.photo1 {
-  z-index: 1;
+img {
+  z-index: 2;
 }
 
 @media screen and (min-width: 1000px) {
-  .photo1 {
+  .photo1 img {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
             clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
     width: 80%;
@@ -129,17 +144,47 @@ img {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .photo1 img:hover {
+    -webkit-filter: sepia(40%);
+    filter: sepia(40%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+}
+
 .disco img {
   margin: 5% 0 0 5%;
 }
 
-.disco p {
+@media screen and (min-width: 1000px) {
+  .disco img {
+    margin: 0 0 10% 17%;
+  }
+}
+
+.disco li {
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
   margin: -21% 0 30% 20%;
   padding: 0;
   position: absolute;
+}
+
+@media screen and (min-width: 1000px) {
+  .disco li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    width: 100%;
+    font-size: 1em;
+    font-family: "Courier", sans-serif;
+    font-weight: bold;
+    margin: 0% 0 10% 17%;
+    padding: 0;
+  }
 }
 
 .photo2 {
