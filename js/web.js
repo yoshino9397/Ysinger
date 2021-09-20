@@ -16,12 +16,21 @@ let h2 = "Soprano Singer";
 document.getElementById("name").innerHTML = h1;
 document.getElementById("job").innerHTML = h2;
 
-let works = ["PLAYING", "SLEEPY", "FALL", "MEMORY"];
+let works = ["PLAYING", "SLEEPY", "FALL"];
 ul = document.createElement("ul");
 document.getElementById("disco").appendChild(ul);
 works.forEach(function (music) {
   let li = document.createElement("li");
   ul.appendChild(li);
+  li.innerHTML += music;
+});
+
+let works1 = ["MEMORY", "SAKURA"];
+ul1 = document.createElement("ul");
+document.getElementById("disco1").appendChild(ul1);
+works1.forEach(function (music) {
+  let li = document.createElement("li");
+  ul1.appendChild(li);
   li.innerHTML += music;
 });
 
@@ -41,27 +50,41 @@ contacts.forEach(function (contact) {
   li.innerHTML += contact;
 });
 
-// window.addEventListener("scroll", function () {
-//   let scroll = window.pageYOffset;
-//   if (scroll > 4000) {
-//     document.body.style.backgroundColor = "#FFAB00";
-//   } else if (scroll > 3000) {
-//     document.body.style.backgroundColor = "#43A047";
-//   } else if (scroll > 2000) {
-//     document.body.style.backgroundColor = "#FF6F00";
-//   } else if (scroll > 1000) {
-//     document.body.style.backgroundColor = "#0091EA";
-//   } else {
-//     document.body.style.backgroundColor = "#FF4081";
-//   }
-// });
+window.addEventListener("scroll", function () {
+  let scroll = window.pageYOffset;
+  if (scroll > 5000) {
+    document.body.style.filter = "hue-rotate(0deg)";
+  } else if (scroll > 4900) {
+    document.body.style.filter = "hue-rotate(160deg)";
+  } else if (scroll > 2000) {
+    document.body.style.filter = "hue-rotate(2200deg)";
+  } else if (scroll > 1000) {
+    document.body.style.filter = "hue-rotate(270deg)";
+  } else {
+    document.body.style.filter = "hue-rotate(330deg)";
+  }
+});
 
+window.addEventListener("scroll", function () {
+  let scroll = window.pageYOffset;
+  if (scroll > 5000) {
+    document.body.style.filter = "grayscale(100%)";
+  } else if (scroll > 4900) {
+    document.body.style.filter = "grayscale(100%)";
+  } else if (scroll > 2000) {
+    document.body.style.filter = "grayscale(100%)";
+  } else if (scroll > 1000) {
+    document.body.style.filter = "grayscale(100%)";
+  } else {
+    document.body.style.filter = "grayscale(100%)";
+  }
+});
 
 // window.addEventListener('scroll', function () {
 //   let scrollTop = window.pageYOffset;
 //   if (scrollTop <= boxHeight) {
-//       photo1.style.backgroundColor = 'red';
+//       photo1.style.filter = 'red';
 //   } else {
-//       photo1.style.backgroundColor = 'blue';
+//       photo1.style.filter = 'blue';
 //   }
 // });
