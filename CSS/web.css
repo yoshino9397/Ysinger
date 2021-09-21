@@ -135,10 +135,6 @@ body {
   }
 }
 
-img {
-  z-index: 1;
-}
-
 @media screen and (min-width: 1000px) {
   .photo1 img {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 64%, 0 64%);
@@ -303,6 +299,8 @@ img {
     font-family: "Courier", sans-serif;
     margin: 10% 0 0 17%;
     padding: 0;
+    position: relative;
+    z-index: 999;
   }
 }
 
@@ -315,6 +313,53 @@ img {
   font-size: 1.3em;
   letter-spacing: 0.07em;
   font-family: "Avenir Next Condensed", sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  .photo2 p {
+    z-index: 33;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 43%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg2 {
+    position: absolute;
+    top: 46%;
+    left: 58%;
+    width: 23%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg3 {
+    position: absolute;
+    top: 57%;
+    left: 10%;
+    width: 23%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg4 {
+    position: absolute;
+    top: 68%;
+    left: 39%;
+    width: 43%;
+    z-index: 2;
+  }
 }
 
 h4 {
