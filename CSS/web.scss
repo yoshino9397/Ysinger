@@ -140,72 +140,111 @@ img {
 }
 
 .imgs1 {
-  img {
+  div {
     margin: $margin;
     display: flex;
     @include mq("lg") {
       display: inline;
-      margin: 1% 0 5% 17%;
+      margin: 0% 0 7% 18%;
     }
   }
 }
 .imgs2 {
-  img {
+  div {
     margin: $margin;
     display: flex;
     @include mq("lg") {
       display: inline;
-      margin: 0.5% 0 10% 17%;
+      margin: 0% 0 2% 18%;
     }
   }
 }
 
-.disco {
-  ul {
-    @include mq("lg") {
-      width: 100%;
-      margin: 5% 0 0 0;
-      padding: 0;
-    }
-  }
-  li {
-    display: block;
-    font-size: 1em;
-    font-family: "Courier", sans-serif;
-    font-weight: bold;
-    margin: -21% 0 30% 20%;
-    padding: 0;
-    @include mq("lg") {
-      display: inline;
-      font-size: 1em;
-      font-family: "Courier", sans-serif;
-      font-weight: bold;
-      margin: 20% 2% 0% 18%;
-      padding: 2% 3%;
-    }
+// .disco {
+//   ul {
+//     @include mq("lg") {
+//       width: 100%;
+//       margin: 5% 0 0 0;
+//       padding: 0;
+//     }
+//   }
+//   li {
+//     display: block;
+//     font-size: 1em;
+//     font-family: "Courier", sans-serif;
+//     font-weight: bold;
+//     margin: -21% 0 30% 20%;
+//     padding: 0;
+//     @include mq("lg") {
+//       display: inline;
+//       font-size: 1em;
+//       font-family: "Courier", sans-serif;
+//       font-weight: bold;
+//       margin: 20% 2% 0% 18%;
+//       padding: 2% 3%;
+//     }
+//   }
+// }
+// .disco1 {
+//   ul {
+//     @include mq("lg") {
+//       width: 100%;
+//     }
+//   }
+//   li {
+//     display: block;
+//     font-size: 1em;
+//     font-family: "Courier", sans-serif;
+//     font-weight: bold;
+//     margin: -21% 0 30% 20%;
+//     padding: 0;
+//     @include mq("lg") {
+//       display: inline;
+//       font-size: 1em;
+//       font-family: "Courier", sans-serif;
+//       font-weight: bold;
+//       margin: 20% 6% 0% 15%;
+//       padding: 2% 3%;
+//     }
+//   }
+// }
+
+.d1 {
+  @include mq("lg") {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // margin: 0 20% 5% 20%;
+    overflow: hidden;
   }
 }
-.disco1 {
-  ul {
-    @include mq("lg") {
-      width: 100%;
-    }
-  }
-  li {
-    display: block;
-    font-size: 1em;
-    font-family: "Courier", sans-serif;
-    font-weight: bold;
-    margin: -21% 0 30% 20%;
+.d1span {
+  @include mq("lg") {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
     padding: 0;
-    @include mq("lg") {
-      display: inline;
-      font-size: 1em;
-      font-family: "Courier", sans-serif;
-      font-weight: bold;
-      margin: 20% 6% 0% 15%;
-      padding: 2% 3%;
-    }
+  }
+}
+.d1span {
+  @include mq("lg") {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    left: -100%;
+  }
+}
+.d1:hover .d1span {
+  @include mq("lg") {
+    left: 5%;
   }
 }
 
