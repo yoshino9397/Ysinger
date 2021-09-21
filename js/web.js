@@ -52,31 +52,16 @@ contacts.forEach(function (contact) {
 
 window.addEventListener("scroll", function () {
   let scroll = window.pageYOffset;
-  if (scroll > 5000) {
-    document.body.style.filter = "hue-rotate(0deg)";
-  } else if (scroll > 4900) {
-    document.body.style.filter = "hue-rotate(160deg)";
-  } else if (scroll > 2000) {
-    document.body.style.filter = "hue-rotate(2200deg)";
-  } else if (scroll > 1000) {
-    document.body.style.filter = "hue-rotate(270deg)";
+  if (scroll > 2300) {
+    document.body.style.filter = "grayscale(15%)hue-rotate(30deg)";
+  } else if (scroll > 1370) {
+    document.body.style.filter = "grayscale(25%)hue-rotate(160deg)";
+  } else if (scroll > 900) {
+    document.body.style.filter = "grayscale(40%)hue-rotate(220deg)";
+  } else if (scroll > 300) {
+    document.body.style.filter = "grayscale(25%)hue-rotate(270deg)";
   } else {
-    document.body.style.filter = "hue-rotate(330deg)";
-  }
-});
-
-window.addEventListener("scroll", function () {
-  let scroll = window.pageYOffset;
-  if (scroll > 5000) {
-    document.body.style.filter = "grayscale(100%)";
-  } else if (scroll > 4900) {
-    document.body.style.filter = "grayscale(100%)";
-  } else if (scroll > 2000) {
-    document.body.style.filter = "grayscale(100%)";
-  } else if (scroll > 1000) {
-    document.body.style.filter = "grayscale(100%)";
-  } else {
-    document.body.style.filter = "grayscale(100%)";
+    document.body.style.filter = "grayscale(15%)hue-rotate(330deg)";
   }
 });
 
@@ -88,3 +73,4 @@ window.addEventListener("scroll", function () {
 //       photo1.style.filter = 'blue';
 //   }
 // });
+
