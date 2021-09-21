@@ -97,7 +97,7 @@ body {
     font-size: 6em;
     letter-spacing: 0.15em;
     position: absolute;
-    z-index: 999;
+    z-index: 55;
   }
 }
 
@@ -116,7 +116,6 @@ body {
     letter-spacing: 0.15em;
     position: absolute;
     font-weight: normal;
-    z-index: 3;
   }
 }
 
@@ -137,7 +136,7 @@ body {
 }
 
 img {
-  z-index: 2;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1000px) {
@@ -188,6 +187,60 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
+  .disco ul {
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 0.7% 0;
+  }
+}
+
+.disco li {
+  display: block;
+  font-size: 1em;
+  font-family: "Courier", sans-serif;
+  font-weight: bold;
+  margin: -21% 0 30% 20%;
+  padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .disco li {
+    display: inline;
+    font-size: 1em;
+    font-family: "Courier", sans-serif;
+    font-weight: bold;
+    margin: 60% 2% 0% 18%;
+    padding: 2% 3%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .disco1 ul {
+    width: 100%;
+  }
+}
+
+.disco1 li {
+  display: block;
+  font-size: 1em;
+  font-family: "Courier", sans-serif;
+  font-weight: bold;
+  margin: -21% 0 30% 20%;
+  padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .disco1 li {
+    display: inline;
+    font-size: 1em;
+    font-family: "Courier", sans-serif;
+    font-weight: bold;
+    margin: 50% 6% 0% 19%;
+    padding: 0%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .d1 {
     width: 100%;
     height: 100%;
@@ -197,13 +250,17 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
+  .d1 img {
+    margin: 0;
+    padding: 0 0 5% 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .d1span {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
     right: 0;
     opacity: 0;
     color: black;
@@ -220,16 +277,32 @@ img {
 
 @media screen and (min-width: 1000px) {
   .d1span {
-    opacity: 1;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    left: -100%;
+    left: -10%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .d1:hover .d1span {
-    left: 5%;
+    left: 30%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.h3b {
+  font-size: 1.7em;
+  font-family: "Courier", sans-serif;
+  margin: 30% 0 0 5%;
+  padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .h3b {
+    font-size: 3.3em;
+    font-family: "Courier", sans-serif;
+    margin: 10% 0 0 17%;
+    padding: 0;
   }
 }
 
