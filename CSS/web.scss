@@ -117,9 +117,6 @@ a {
     padding: 0;
   }
 }
-img {
-  z-index: 1;
-}
 
 .photo1 img {
   @include mq("lg") {
@@ -215,12 +212,12 @@ img {
     position: relative;
     overflow: hidden;
   }
-  img{
-    @include mq("lg"){
+  img {
+    @include mq("lg") {
       margin: 0;
       padding: 0 0 5% 0;
     }
-}
+  }
 }
 .d1span {
   @include mq("lg") {
@@ -249,7 +246,7 @@ img {
   }
 }
 
-.h3b{
+.h3b {
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
   margin: 30% 0 0 5%;
@@ -259,10 +256,10 @@ img {
     font-family: "Courier", sans-serif;
     margin: 10% 0 0 17%;
     padding: 0;
+    position: relative;
+    z-index: 999;
   }
 }
-
-
 
 .photo2 {
   margin: 0 2% 2%;
@@ -271,8 +268,49 @@ img {
     font-size: 1.3em;
     letter-spacing: 0.07em;
     font-family: "Avenir Next Condensed", sans-serif;
+    @include mq("lg") {
+      z-index: 33;
+      position: relative;
+    }
   }
 }
+.bg1 {
+  @include mq("lg") {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 43%;
+    z-index: 2;
+  }
+}
+.bg2 {
+  @include mq("lg") {
+    position: absolute;
+    top: 46%;
+    left: 58%;
+    width: 23%;
+    z-index: 2;
+  }
+}
+.bg3 {
+  @include mq("lg") {
+    position: absolute;
+    top: 57%;
+    left: 10%;
+    width: 23%;
+    z-index: 2;
+  }
+}
+.bg4 {
+  @include mq("lg") {
+    position: absolute;
+    top: 68%;
+    left: 39%;
+    width: 43%;
+    z-index: 2;
+  }
+}
+
 h4 {
   font-size: 1.7em;
   font-weight: bolder;
