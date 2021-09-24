@@ -302,11 +302,11 @@ body {
   .h3b {
     font-size: 3.3em;
     font-family: "Courier", sans-serif;
-    margin: 10% 0 0 17%;
+    margin: 35% 0 0 17%;
     padding: 0;
-    position: relative;
-    top: 6%;
-    z-index: 999;
+    position: absolute;
+    z-index: 777;
+    color: white;
   }
 }
 
@@ -326,16 +326,14 @@ body {
     z-index: 33;
     position: absolute;
     width: 50%;
-    left: 20%;
-    top: 45%;
+    margin: 40% 0 10% 10%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .bg1 {
     position: absolute;
-    top: 35%;
-    left: 10%;
+    margin: 10% 7%;
     width: 43%;
     z-index: 2;
   }
@@ -344,8 +342,7 @@ body {
 @media screen and (min-width: 1000px) {
   .bg2 {
     position: absolute;
-    top: 46%;
-    left: 58%;
+    margin: 50% 0 0 55%;
     width: 20%;
     z-index: 2;
   }
@@ -399,6 +396,14 @@ body {
 footer {
   margin: 15% 0 0 7%;
   padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    top: 40%;
+    left: 40%;
+    position: relative;
+  }
 }
 
 footer p {
