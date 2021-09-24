@@ -56,7 +56,7 @@ body {
     list-style: $line-style;
     position: fixed;
     margin: 32% 0 0 0;
-    transform-origin: top left;
+    transform-origin:top left;
     transform: rotate(-90deg) translateX(-100%);
     top: 0%;
     z-index: 999;
@@ -259,11 +259,11 @@ a {
   @include mq("lg") {
     font-size: 3.3em;
     font-family: "Courier", sans-serif;
-    margin: 10% 0 0 17%;
+    margin: 35% 0 0 17%;
     padding: 0;
-    position: relative;
-    top: 6%;
-    z-index: 999;
+    position: absolute;
+    z-index: 777;
+    color: white;
   }
 }
 
@@ -278,16 +278,14 @@ a {
       z-index: 33;
       position: absolute;
       width: 50%;
-      left: 20%;
-      top: 45%;
+      margin: 40% 0 10% 10%;
     }
   }
 }
 .bg1 {
   @include mq("lg") {
     position: absolute;
-    top: 35%;
-    left: 10%;
+    margin: 10% 7%;
     width: 43%;
     z-index: 2;
   }
@@ -295,8 +293,7 @@ a {
 .bg2 {
   @include mq("lg") {
     position: absolute;
-    top: 46%;
-    left: 58%;
+    margin: 50% 0 0 55%;
     width: 20%;
     z-index: 2;
   }
@@ -342,9 +339,17 @@ a {
 footer {
   margin: 15% 0 0 7%;
   padding: 0;
+  @include mq("lg"){
+    top: 40%;
+    left: 40%;
+    position: relative;
+  }
   p {
     font-size: 1.3em;
     font-family: "Avenir Next Condensed", sans-serif;
+    @include mq("lg"){
+
+    }
   }
   ul {
     list-style: $line-style;

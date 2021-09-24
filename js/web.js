@@ -45,9 +45,9 @@ let contacts = ["FACEBOOK", "INSTAGRAM", "SOUNDS CLOUD", "YOUTUBE"];
 ul = document.createElement("ul");
 document.getElementById("contacts").appendChild(ul);
 contacts.forEach(function (contact) {
-  let li = document.createElement("li");
-  ul.appendChild(li);
-  li.innerHTML += contact;
+  let li1 = document.createElement("li");
+  ul.appendChild(li1);
+  li1.innerHTML += contact;
 });
 
 window.addEventListener("scroll", function () {
@@ -73,4 +73,3 @@ window.addEventListener("scroll", function () {
 //       photo1.style.filter = 'blue';
 //   }
 // });
-
