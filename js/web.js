@@ -52,16 +52,20 @@ document.getElementById("h4").innerHTML = h4;
 
 window.addEventListener("scroll", function () {
   let scroll = window.pageYOffset;
-  if (scroll > 2300) {
-    document.body.style.filter = "grayscale(15%)hue-rotate(30deg)";
-  } else if (scroll > 1370) {
-    document.body.style.filter = "grayscale(25%)hue-rotate(160deg)";
-  } else if (scroll > 900) {
-    document.body.style.filter = "grayscale(40%)hue-rotate(220deg)";
-  } else if (scroll > 300) {
-    document.body.style.filter = "grayscale(25%)hue-rotate(270deg)";
+  if (scroll > 3300) {
+    document.body.style.filter = "grayscale(10%)";
+  } else if (scroll > 3000) {
+    document.body.style.filter = "grayscale(75%)";
+  } else if (scroll > 1700) {
+    document.body.style.filter = "grayscale(10%)";
+  } else if (scroll > 1300) {
+    document.body.style.filter = "grayscale(75%)";
+  } else if (scroll > 550) {
+    document.body.style.filter = "grayscale(10%)";
+  } else if (scroll > 200) {
+    document.body.style.filter = "grayscale(75%)";
   } else {
-    document.body.style.filter = "grayscale(15%)hue-rotate(330deg)";
+    document.body.style.filter = "grayscale(10%)";
   }
 });
 

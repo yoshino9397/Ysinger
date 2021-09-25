@@ -346,7 +346,7 @@ footer {
     font-size: 1.3em;
     font-family: "Avenir Next Condensed", sans-serif;
     @include mq("lg") {
-      margin: -200% 0% 0% -15%;
+      margin: -200% 0% 0% -10%;
       padding: 0;
       font-size: 1.9em;
     }
@@ -355,7 +355,7 @@ footer {
     list-style: $line-style;
     width: 60%;
     @include mq("lg") {
-      margin: 20% 0% 0% -15%;
+      margin: 20% 0% 0% -10%;
       padding: 0%;
       position: relative;
       z-index: 24;
@@ -374,17 +374,14 @@ footer {
     }
   }
 }
-img {
-  @include mq("lg") {
-    margin: 8% 0 0 0%;
-    padding: 0%;
-    z-index: 2;
-  }
-}
 span {
   font-size: 1.7em;
 }
-
+.lastpic {
+  @include mq("lg") {
+    opacity: 75%;
+  }
+}
 // .fadein{
 //   opacity: 0;
 //   transform: translate(0.80px);
