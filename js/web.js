@@ -50,6 +50,7 @@ document.getElementById("h4").innerHTML = h4;
 //   li1.innerHTML += contact;
 // });
 
+//-----------Here------------------------------------------------------//
 window.addEventListener("scroll", function () {
   let scroll = window.pageYOffset;
   if (scroll > 3300) {
@@ -68,6 +69,7 @@ window.addEventListener("scroll", function () {
     document.body.style.filter = "grayscale(10%)";
   }
 });
+//-----------------------------------------------------------------------
 
 // window.addEventListener('scroll', function () {
 //   let scrollTop = window.pageYOffset;
