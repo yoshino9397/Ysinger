@@ -49,6 +49,7 @@ body {
     text-decoration: $text-decoration;
   }
 }
+//----------------------------here-----------------------//
 .navweb {
   display: none;
   @include mq("lg") {
@@ -83,6 +84,7 @@ a {
     }
   }
 }
+//--------------------------------------------------------//
 
 .wakai {
   font-size: 3em;
