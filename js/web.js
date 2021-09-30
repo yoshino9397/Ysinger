@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
     document.body.style.filter = "grayscale(10%)";
   } else if (scroll > 3000) {
     document.body.style.filter = "grayscale(75%)";
-  } else if (scroll > 1700) {
+  } else if (scroll > 1650) {
     document.body.style.filter = "grayscale(10%)";
   } else if (scroll > 1300) {
     document.body.style.filter = "grayscale(75%)";
@@ -70,12 +70,3 @@ window.addEventListener("scroll", function () {
   }
 });
 //-----------------------------------------------------------------------
-
-// window.addEventListener('scroll', function () {
-//   let scrollTop = window.pageYOffset;
-//   if (scrollTop <= boxHeight) {
-//       photo1.style.filter = 'red';
-//   } else {
-//       photo1.style.filter = 'blue';
-//   }
-// });
