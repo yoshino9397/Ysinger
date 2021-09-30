@@ -325,7 +325,7 @@ a {
   padding: 0;
   @include mq("lg") {
     position: relative;
-    margin: 135% 0 0% 15%;
+    margin: 165% 0 -15% 15%;
     text-decoration: underline black 4px;
     font-size: 2.5em;
   }
@@ -340,7 +340,7 @@ footer {
   padding: 0;
   @include mq("lg") {
     margin: 15% 0 0 55%;
-    padding: 0%;
+    padding:0% 0 0% 0;
     position: relative;
     width: 25%;
   }
@@ -348,16 +348,17 @@ footer {
     font-size: 1.3em;
     font-family: "Avenir Next Condensed", sans-serif;
     @include mq("lg") {
-      margin: -200% 0% 0% -10%;
+      margin: -80% 0% 0% -12%;
       padding: 0;
-      font-size: 1.9em;
+      font-size: 2.5em;
+      letter-spacing: .2em;
     }
   }
   ul {
     list-style: $line-style;
     width: 60%;
     @include mq("lg") {
-      margin: 20% 0% 0% -10%;
+      margin: -10% 0% -20% -10%;
       padding: 0%;
       position: relative;
       z-index: 24;
@@ -382,14 +383,7 @@ span {
 .lastpic {
   @include mq("lg") {
     opacity: 75%;
+    margin: 0;
+    padding: 0%;
   }
 }
-// .fadein{
-//   opacity: 0;
-//   transform: translate(0.80px);
-//   transition: all 1.5s;
-// }
-// .fadein.scrollin{
-//   opacity: 1;
-//   transform: translate(0,0);
-// }
