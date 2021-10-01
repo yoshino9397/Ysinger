@@ -15,6 +15,7 @@ $line-style: none;
 $text-decoration: none;
 $margin: 5% 0 0 5%;
 $z-index: 1;
+$opacity: 75%;
 
 html {
   @include mq("lg") {
@@ -28,6 +29,11 @@ body {
   background-color: white;
   @include mq("lg") {
     height: 4200px;
+  }
+}
+img {
+  @include mq("lg") {
+    opacity: $opacity;
   }
 }
 .navphone {
@@ -49,7 +55,6 @@ body {
     text-decoration: $text-decoration;
   }
 }
-//----------------------------here-----------------------//
 .navweb {
   display: none;
   @include mq("lg") {
@@ -60,7 +65,6 @@ body {
     transform-origin: top left;
     transform: rotate(-90deg) translateX(-100%);
     top: 0%;
-    z-index: 474;
   }
   li {
     @include mq("lg") {
@@ -84,7 +88,12 @@ a {
     }
   }
 }
-//--------------------------------------------------------//
+.why {
+  @include mq("lg") {
+    position: relative;
+    z-index: 999;
+  }
+}
 
 .wakai {
   font-size: 3em;
@@ -132,6 +141,7 @@ a {
     width: 80%;
     padding: 0;
     margin: 0;
+    z-index: 1;
   }
   &:hover {
     @include mq("lg") {
@@ -280,7 +290,8 @@ a {
       z-index: 33;
       position: absolute;
       width: 50%;
-      margin: 40% 0 10% 10%;
+      margin: 40% 0 10% 15%;
+      font-size: 1.8em;
     }
   }
 }
@@ -344,7 +355,7 @@ a {
 //     position: relative;
 //     width: 25%;
 //   }
-.footer{
+.footer {
   font-size: 1.3em;
   font-family: "Avenir Next Condensed", sans-serif;
   @include mq("lg") {
@@ -354,7 +365,7 @@ a {
     letter-spacing: 0.2em;
   }
 }
-.footer1{
+.footer1 {
   list-style: $line-style;
   width: 60%;
   @include mq("lg") {
@@ -363,14 +374,14 @@ a {
     position: relative;
     z-index: 24;
   }
-  li{
-    @include mq("lg"){
+  li {
+    @include mq("lg") {
       margin: 0;
       padding: 1% 0;
     }
   }
 }
-.footer2 a{
+.footer2 a {
   text-decoration: underline black;
   color: black;
   font-family: "Avenir Next Condensed", sans-serif;
@@ -387,8 +398,7 @@ span {
 }
 .lastpic {
   @include mq("lg") {
-    opacity: 75%;
-    margin: 0;
+    margin: 0 0 -1% 0;
     padding: 0%;
   }
 }
