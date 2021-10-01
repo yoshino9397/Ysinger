@@ -16,6 +16,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  img {
+    opacity: 75%;
+  }
+}
+
 .navphone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +66,6 @@ body {
     -webkit-transform: rotate(-90deg) translateX(-100%);
             transform: rotate(-90deg) translateX(-100%);
     top: 0%;
-    z-index: 474;
   }
 }
 
@@ -87,6 +92,13 @@ body {
   a:hover {
     -webkit-transform: rotateX(360deg);
             transform: rotateX(360deg);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .why {
+    position: relative;
+    z-index: 999;
   }
 }
 
@@ -148,6 +160,7 @@ body {
     width: 80%;
     padding: 0;
     margin: 0;
+    z-index: 1;
   }
 }
 
@@ -326,7 +339,8 @@ body {
     z-index: 33;
     position: absolute;
     width: 50%;
-    margin: 40% 0 10% 10%;
+    margin: 40% 0 10% 15%;
+    font-size: 1.8em;
   }
 }
 
@@ -390,49 +404,42 @@ body {
   color: black;
 }
 
-footer {
-  margin: 15% 0 0 7%;
-  padding: 0;
-}
-
-@media screen and (min-width: 1000px) {
-  footer {
-    margin: 15% 0 0 55%;
-    padding: 0% 0 0% 0;
-    position: relative;
-    width: 25%;
-  }
-}
-
-footer p {
+.footer {
   font-size: 1.3em;
   font-family: "Avenir Next Condensed", sans-serif;
 }
 
 @media screen and (min-width: 1000px) {
-  footer p {
-    margin: -80% 0% 0% -12%;
+  .footer {
+    margin: -5% 0% 0% 50%;
     padding: 0;
     font-size: 2.5em;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
 }
 
-footer ul {
+.footer1 {
   list-style: none;
   width: 60%;
 }
 
 @media screen and (min-width: 1000px) {
-  footer ul {
-    margin: -10% 0% -20% -10%;
+  .footer1 {
+    margin: -1% 0% 0% 50%;
     padding: 0%;
     position: relative;
     z-index: 24;
   }
 }
 
-footer a {
+@media screen and (min-width: 1000px) {
+  .footer1 li {
+    margin: 0;
+    padding: 1% 0;
+  }
+}
+
+.footer2 a {
   -webkit-text-decoration: underline black;
           text-decoration: underline black;
   color: black;
@@ -441,10 +448,10 @@ footer a {
 }
 
 @media screen and (min-width: 1000px) {
-  footer a {
+  .footer2 a {
     font-size: 1.8em;
     margin: 0;
-    padding: 2% 0;
+    padding: 0;
     color: black;
   }
 }
@@ -455,8 +462,7 @@ span {
 
 @media screen and (min-width: 1000px) {
   .lastpic {
-    opacity: 75%;
-    margin: 0;
+    margin: 0 0 -1% 0;
     padding: 0%;
   }
 }
