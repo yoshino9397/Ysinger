@@ -271,7 +271,7 @@ a {
   @include mq("lg") {
     font-size: 3.3em;
     font-family: "Courier", sans-serif;
-    margin: 35% 0 0 17%;
+    margin: 40% 0 0% 22%;
     padding: 0;
     position: absolute;
     z-index: 777;
@@ -290,8 +290,10 @@ a {
       z-index: 33;
       position: absolute;
       width: 50%;
-      margin: 40% 0 10% 15%;
-      font-size: 1.8em;
+      margin: 48% 0 10% 15%;
+      padding: 0;
+      font-size: 1.5em;
+      word-spacing: .2em;
     }
   }
 }
@@ -371,8 +373,9 @@ a {
   @include mq("lg") {
     margin: -1% 0% 0% 50%;
     padding: 0%;
-    position: relative;
+    position: absolute;
     z-index: 24;
+    width: 50%;
   }
   li {
     @include mq("lg") {
