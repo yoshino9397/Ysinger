@@ -8,18 +8,18 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
+  height: 3100px;
 }
 
 @media screen and (min-width: 1000px) {
   body {
-    height: 4200px;
+    height: 4100px;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  img {
-    opacity: 75%;
-  }
+img {
+  opacity: 75%;
+  z-index: 1;
 }
 
 .navphone {
@@ -208,29 +208,31 @@ body {
   }
 }
 
-@media screen and (min-width: 350px) {
-  .disco ul {
-    position: absolute;
-    margin: 0%;
-    padding: 0%;
-  }
+.disco ul {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1000px) {
   .disco ul {
     width: 100%;
-    margin: 5% 0 0 0;
-    padding: 0.7% 0;
+    position: absolute;
+    margin: 0% 0 10% 0;
+    padding: 0% 0;
   }
 }
 
 .disco li {
+  position: relative;
   display: block;
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
   margin: 100% 0% 200% 180%;
   padding: 0;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1000px) {
@@ -240,7 +242,7 @@ body {
     font-family: "Courier", sans-serif;
     font-weight: bold;
     margin: 60% 2% 0% 18%;
-    padding: 2% 3%;
+    padding: 2% 4%;
   }
 }
 
@@ -274,7 +276,7 @@ body {
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
-    margin: 50% 6% 0% 19%;
+    margin: 50% 7% 0% 22%;
     padding: 0%;
   }
 }
@@ -288,19 +290,17 @@ body {
   }
 }
 
-@media screen and (min-width: 350px) {
-  .d1 img {
-    width: 35%;
-    margin: 0%;
-    padding: 0%;
-  }
+.d1 img {
+  width: 35%;
+  margin: 0%;
+  padding: 0%;
 }
 
 @media screen and (min-width: 1000px) {
   .d1 img {
-    width: 13%;
-    margin: 0;
-    padding: 0 0 5% 0;
+    width: 14%;
+    margin: 0% 0 0 0;
+    padding: 0.3% 0 5% 0;
   }
 }
 
@@ -323,7 +323,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding: 0;
+    padding: 13% 0 0 0;
     left: -10%;
   }
 }
@@ -347,17 +347,18 @@ body {
   font-family: "Courier", sans-serif;
   margin: 80% 0 0 5%;
   padding: 0;
+  color: black;
 }
 
 @media screen and (min-width: 1000px) {
   .h3b {
     font-size: 3.3em;
+    font-weight: bolder;
     font-family: "Courier", sans-serif;
     margin: 40% 0 0% 22%;
     padding: 0;
     position: absolute;
     z-index: 777;
-    color: white;
   }
 }
 
@@ -374,7 +375,7 @@ body {
     z-index: 33;
     position: absolute;
     width: 50%;
-    margin: 48% 0 10% 15%;
+    margin: 48% 0 10% 25%;
     padding: 0;
     font-size: 1.5em;
     word-spacing: 0.2em;
@@ -390,7 +391,7 @@ body {
 @media screen and (min-width: 1000px) {
   .bg1 {
     position: absolute;
-    margin: 10% 7%;
+    margin: 10% 13%;
     width: 43%;
     z-index: 2;
   }
@@ -406,7 +407,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    margin: 50% 0 0 55%;
+    margin: 50% 0 0 65%;
     width: 20%;
     z-index: 2;
   }
@@ -422,7 +423,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 70% 0 0 7%;
+    margin: 70% 0 0 13%;
     width: 21%;
     z-index: 2;
   }
@@ -438,7 +439,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 110% 0 0 45%;
+    margin: 105% 0 0 50%;
     width: 35%;
     z-index: 2;
   }
@@ -448,8 +449,10 @@ body {
   font-size: 1.7em;
   font-weight: bolder;
   font-family: "Courier", sans-serif;
-  margin: 0 7%;
-  padding: 0;
+  margin: 20% 0% 0 0;
+  padding: 0 5%;
+  -webkit-text-decoration: underline #80429c 4px;
+          text-decoration: underline #80429c 4px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -463,8 +466,13 @@ body {
 }
 
 .footer {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Avenir Next Condensed", sans-serif;
+  margin: 30% 0 0 0;
+  padding: 0 5%;
+  -webkit-text-decoration: underline 1px black;
+          text-decoration: underline 1px black;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (min-width: 1000px) {
@@ -481,6 +489,8 @@ body {
 .footer1 {
   list-style: none;
   width: 60%;
+  margin: 0;
+  padding: 0 5%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -500,16 +510,18 @@ body {
   }
 }
 
-.footer2 a {
+.footer2 {
   -webkit-text-decoration: underline black;
           text-decoration: underline black;
   color: black;
   font-family: "Avenir Next Condensed", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (min-width: 1000px) {
-  .footer2 a {
+  .footer2 {
+    text-decoration: none;
     font-size: 1.8em;
     margin: 0;
     padding: 0;
