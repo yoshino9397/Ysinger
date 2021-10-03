@@ -1,16 +1,3 @@
-// let menu = ["HOME", "LESSON", "STADIO", "CONTACT"];
-// let links = ["https://www.remijousselme.com/", "https://www.youtube.com/watch?v=fnPn6At3v28&list=RDMMXs97rEV1EBM&index=4", "https://www.youtube.com/watch?v=om-a-AHXXZo", "w3schools.com/jsref/met_element_addeventlistener.asp"];
-//   nav = document.createElement("nav");
-
-// document.getElementById("menuVar").appendChild(nav);
-
-// menu.forEach(function (info) {
-//   let lia = document.createElement("li");
-//   nav.appendChild(lia);
-
-//   lia.innerHTML += info;
-// });
-
 let h1 = "YURIA WAKAI";
 let h2 = "Soprano Singer";
 document.getElementById("name").innerHTML = h1;
@@ -42,16 +29,6 @@ document.getElementById("h3b").innerHTML = h3b;
 document.getElementById("h4").innerHTML = h4;
 
 
-// let contacts = ["FACEBOOK", "INSTAGRAM", "SOUNDS CLOUD", "YOUTUBE"];
-// ul = document.createElement("ul");
-// document.getElementById("contacts").appendChild(ul);
-// contacts.forEach(function (contact) {
-//   let li1 = document.createElement("li");
-//   ul.appendChild(li1);
-//   li1.innerHTML += contact;
-// });
-
-//-----------Here------------------------------------------------------//
 window.addEventListener("scroll", function () {
   let scroll = window.pageYOffset;
   if (scroll > 3300) {
@@ -70,4 +47,4 @@ window.addEventListener("scroll", function () {
     document.body.style.filter = "grayscale(10%)";
   }
 });
-//-----------------------------------------------------------------------
+

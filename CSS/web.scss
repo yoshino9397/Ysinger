@@ -34,7 +34,6 @@ body {
 }
 img {
   opacity: $opacity;
-  z-index: $z-index;
 }
 .navphone {
   display: flex;
@@ -183,7 +182,6 @@ a {
     position: absolute;
     margin: 0%;
     padding: 0%;
-    z-index: 999;
     @include mq("lg") {
       width: 100%;
       position: absolute;
@@ -192,14 +190,12 @@ a {
     }
   }
   li {
-    position: relative;
     display: block;
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
     margin: 100% 0% 200% 180%;
     padding: 0;
-    z-index: 999;
     @include mq("lg") {
       display: inline;
       font-size: 1em;
@@ -251,6 +247,7 @@ a {
     width: 35%;
     margin: 0%;
     padding: 0%;
+    z-index: 1;
     @include mq("lg") {
       width: 14%;
       margin: 0% 0 0 0;
