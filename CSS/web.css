@@ -181,7 +181,7 @@ body {
 }
 
 .imgs1 div {
-  margin: 5% 0 0 5%;
+  margin: 10% 0 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +195,7 @@ body {
 }
 
 .imgs2 div {
-  margin: 5% 0 0 5%;
+  margin: 10% 0 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +205,14 @@ body {
   .imgs2 div {
     display: inline;
     margin: 0% 0 2% 18%;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .disco ul {
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
   }
 }
 
@@ -221,6 +229,7 @@ body {
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
+  margin: 100% 0% 200% 180%;
   padding: 0;
 }
 
@@ -235,9 +244,18 @@ body {
   }
 }
 
+.disco1 ul {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+}
+
 @media screen and (min-width: 1000px) {
   .disco1 ul {
     width: 100%;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
   }
 }
 
@@ -246,7 +264,7 @@ body {
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
-  margin: -21% 0 30% 20%;
+  margin: 130% 0% 270% 190%;
   padding: 0;
 }
 
@@ -270,8 +288,17 @@ body {
   }
 }
 
+@media screen and (min-width: 350px) {
+  .d1 img {
+    width: 35%;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .d1 img {
+    width: 13%;
     margin: 0;
     padding: 0 0 5% 0;
   }
@@ -317,7 +344,7 @@ body {
 .h3b {
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
-  margin: 30% 0 0 5%;
+  margin: 70% 0 0 5%;
   padding: 0;
 }
 
@@ -334,14 +361,15 @@ body {
 }
 
 .photo2 {
-  margin: 0 2% 2%;
+  margin: -35% 2% 0 0%;
   padding: 5%;
 }
 
 .photo2 p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   letter-spacing: 0.07em;
   font-family: "Avenir Next Condensed", sans-serif;
+  margin-top: 65%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -352,8 +380,14 @@ body {
     margin: 48% 0 10% 15%;
     padding: 0;
     font-size: 1.5em;
-    word-spacing: .2em;
+    word-spacing: 0.2em;
   }
+}
+
+.bg1 {
+  width: 100%;
+  margin: 0% 0 0 0%;
+  padding: 0;
 }
 
 @media screen and (min-width: 1000px) {
@@ -365,6 +399,10 @@ body {
   }
 }
 
+.bg2 {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   .bg2 {
     position: absolute;
@@ -374,6 +412,10 @@ body {
   }
 }
 
+.bg3 {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   .bg3 {
     position: absolute;
@@ -381,6 +423,10 @@ body {
     width: 21%;
     z-index: 2;
   }
+}
+
+.bg4 {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -467,6 +513,10 @@ body {
 
 span {
   font-size: 1.7em;
+}
+
+.lastpic {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
