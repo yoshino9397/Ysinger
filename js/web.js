@@ -23,10 +23,9 @@ works1.forEach(function (music) {
 
 let h3a = "Discography";
 let h3b = "Biography";
-let h4 = "More Information";
+
 document.getElementById("h3a").innerHTML = h3a;
 document.getElementById("h3b").innerHTML = h3b;
-document.getElementById("h4").innerHTML = h4;
 
 
 window.addEventListener("scroll", function () {
