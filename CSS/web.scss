@@ -286,9 +286,10 @@ a {
 }
 
 .h3b {
+  position: absolute;
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
-  margin: 70% 0 0 5%;
+  margin: 80% 0 0 5%;
   padding: 0;
   @include mq("lg") {
     font-size: 3.3em;
@@ -302,13 +303,12 @@ a {
 }
 
 .photo2 {
-  margin: -35% 2% 0 0%;
-  padding: 5%;
   p {
     font-size: 1.1em;
     letter-spacing: 0.07em;
     font-family: "Avenir Next Condensed", sans-serif;
-    margin-top: 65%;
+    margin: 60% 0% 0 0%;
+    padding: 0 5% 0 5%;
     @include mq("lg") {
       z-index: 33;
       position: absolute;
@@ -321,8 +321,8 @@ a {
   }
 }
 .bg1 {
-  width: 100%;
-  margin: 0% 0 0 0%;
+  width: 90%;
+  margin: 60% 5% 0 5%;
   padding: 0;
   @include mq("lg") {
     position: absolute;
@@ -334,6 +334,7 @@ a {
 .bg2 {
   display: none;
   @include mq("lg") {
+    display: flex;
     position: absolute;
     margin: 50% 0 0 55%;
     width: 20%;
@@ -344,6 +345,7 @@ a {
   display: none;
   @include mq("lg") {
     position: absolute;
+    display: flex;
     margin: 70% 0 0 7%;
     width: 21%;
     z-index: 2;
@@ -353,6 +355,7 @@ a {
   display: none;
   @include mq("lg") {
     position: absolute;
+    display: flex;
     margin: 110% 0 0 45%;
     width: 35%;
     z-index: 2;
@@ -419,6 +422,7 @@ span {
 .lastpic {
   display: none;
   @include mq("lg") {
+    display: flex;
     margin: 0 0 -1% 0;
     padding: 0%;
   }
