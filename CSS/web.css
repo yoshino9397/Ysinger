@@ -227,7 +227,7 @@ img {
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
-  margin: 100% 0% 200% 180%;
+  margin: 85% 0% 200% 300%;
   padding: 0;
 }
 
@@ -246,6 +246,7 @@ img {
   position: absolute;
   margin: 0%;
   padding: 0%;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1000px) {
@@ -258,12 +259,14 @@ img {
 }
 
 .disco1 li {
+  position: relative;
   display: block;
   font-size: 1em;
   font-family: "Courier", sans-serif;
   font-weight: bold;
-  margin: 130% 0% 270% 190%;
+  margin: 140% 0% 270% 350%;
   padding: 0;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1000px) {
@@ -302,7 +305,25 @@ img {
 }
 
 .d1span {
-  opacity: 0;
+  position: relative;
+  display: block;
+  font-size: 1em;
+  font-family: "Avenir Next Condensed", sans-serif;
+  margin: 130% 0% 270% 190%;
+  padding: 3% 11%;
+}
+
+.d1span a {
+  -webkit-text-decoration: underline black 1px;
+          text-decoration: underline black 1px;
+  color: black;
+}
+
+@media screen and (min-width: 1000px) {
+  .d1span a {
+    -webkit-text-decoration: underline black 2px;
+            text-decoration: underline black 2px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -443,22 +464,32 @@ img {
 }
 
 .h4 {
-  font-size: 1.7em;
-  font-weight: bolder;
-  font-family: "Courier", sans-serif;
   margin: 20% 0% 0 0;
   padding: 0 5%;
-  -webkit-text-decoration: underline #80429c 4px;
-          text-decoration: underline #80429c 4px;
+}
+
+.h4 a {
+  color: black;
+  font-size: 1.3em;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-text-decoration: underline #80429c 3px;
+          text-decoration: underline #80429c 3px;
+  font-family: "Courier", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .h4 a {
+    -webkit-text-decoration: underline #80429c 4px;
+            text-decoration: underline #80429c 4px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .h4 {
     position: relative;
     margin: 165% 0 -15% 15%;
-    -webkit-text-decoration: underline #80429c 4px;
-            text-decoration: underline #80429c 4px;
-    font-size: 2.5em;
   }
 }
 

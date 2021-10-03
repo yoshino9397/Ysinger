@@ -194,7 +194,7 @@ a {
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
-    margin: 100% 0% 200% 180%;
+    margin: 85% 0% 200% 300%;
     padding: 0;
     @include mq("lg") {
       display: inline;
@@ -211,6 +211,7 @@ a {
     position: absolute;
     margin: 0%;
     padding: 0%;
+    z-index: 999;
     @include mq("lg") {
       width: 100%;
       position: absolute;
@@ -219,12 +220,14 @@ a {
     }
   }
   li {
+    position: relative;
     display: block;
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
-    margin: 130% 0% 270% 190%;
+    margin: 140% 0% 270% 350%;
     padding: 0;
+    z-index: 999;
     @include mq("lg") {
       display: inline;
       font-size: 1em;
@@ -256,7 +259,19 @@ a {
   }
 }
 .d1span {
-  opacity: 0;
+  position: relative;
+  display: block;
+  font-size: 1em;
+  font-family: "Avenir Next Condensed", sans-serif;
+  margin: 130% 0% 270% 190%;
+  padding: 3% 11%;
+  a {
+    text-decoration: underline black 1px;
+    color: black;
+    @include mq("lg") {
+      text-decoration: underline black 2px;
+    }
+  }
   @include mq("lg") {
     width: 100%;
     height: 100%;
@@ -359,17 +374,22 @@ a {
 }
 
 .h4 {
-  font-size: 1.7em;
-  font-weight: bolder;
-  font-family: "Courier", sans-serif;
   margin: 20% 0% 0 0;
   padding: 0 5%;
-  text-decoration: underline rgb(128, 66, 156) 4px;
+  a {
+    color: black;
+    font-size: 1.3em;
+    transform: none;
+    text-decoration: underline rgb(128, 66, 156) 3px;
+    font-family: "Courier", sans-serif;
+    font-weight: bold;
+    @include mq("lg") {
+      text-decoration: underline rgb(128, 66, 156) 4px;
+    }
+  }
   @include mq("lg") {
     position: relative;
     margin: 165% 0 -15% 15%;
-    text-decoration: underline rgb(128, 66, 156) 4px;
-    font-size: 2.5em;
   }
 }
 
