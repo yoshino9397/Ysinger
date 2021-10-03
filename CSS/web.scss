@@ -27,14 +27,14 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
+  height: 3100px;
   @include mq("lg") {
-    height: 4200px;
+    height: 4100px;
   }
 }
 img {
-  @include mq("lg") {
-    opacity: $opacity;
-  }
+  opacity: $opacity;
+  z-index: $z-index;
 }
 .navphone {
   display: flex;
@@ -180,31 +180,33 @@ a {
 
 .disco {
   ul {
-    @include mq("sm") {
-      position: absolute;
-      margin: 0%;
-      padding: 0%;
-    }
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    z-index: 999;
     @include mq("lg") {
       width: 100%;
-      margin: 5% 0 0 0;
-      padding: 0.7% 0;
+      position: absolute;
+      margin: 0% 0 10% 0;
+      padding: 0% 0;
     }
   }
   li {
+    position: relative;
     display: block;
     font-size: 1em;
     font-family: "Courier", sans-serif;
     font-weight: bold;
     margin: 100% 0% 200% 180%;
     padding: 0;
+    z-index: 999;
     @include mq("lg") {
       display: inline;
       font-size: 1em;
       font-family: "Courier", sans-serif;
       font-weight: bold;
       margin: 60% 2% 0% 18%;
-      padding: 2% 3%;
+      padding: 2% 4%;
     }
   }
 }
@@ -232,7 +234,7 @@ a {
       font-size: 1em;
       font-family: "Courier", sans-serif;
       font-weight: bold;
-      margin: 50% 6% 0% 19%;
+      margin: 50% 7% 0% 22%;
       padding: 0%;
     }
   }
@@ -246,18 +248,14 @@ a {
     overflow: hidden;
   }
   img {
-    @include mq("sm") {
-      width: 35%;
-      margin: 0%;
-      padding: 0%;
-    }
-    //-----------------check-----------------------//
+    width: 35%;
+    margin: 0%;
+    padding: 0%;
     @include mq("lg") {
-      width: 13%;
-      margin: 0;
-      padding: 0 0 5% 0;
+      width: 14%;
+      margin: 0% 0 0 0;
+      padding: 0.3% 0 5% 0;
     }
-    //-------------------------------------------
   }
 }
 .d1span {
@@ -272,7 +270,7 @@ a {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 0;
+    padding: 13% 0 0 0;
     left: -10%;
   }
 }
@@ -291,14 +289,15 @@ a {
   font-family: "Courier", sans-serif;
   margin: 80% 0 0 5%;
   padding: 0;
+  color: black;
   @include mq("lg") {
     font-size: 3.3em;
+    font-weight: bolder;
     font-family: "Courier", sans-serif;
     margin: 40% 0 0% 22%;
     padding: 0;
     position: absolute;
     z-index: 777;
-    color: white;
   }
 }
 
@@ -313,7 +312,7 @@ a {
       z-index: 33;
       position: absolute;
       width: 50%;
-      margin: 48% 0 10% 15%;
+      margin: 48% 0 10% 25%;
       padding: 0;
       font-size: 1.5em;
       word-spacing: 0.2em;
@@ -326,7 +325,7 @@ a {
   padding: 0;
   @include mq("lg") {
     position: absolute;
-    margin: 10% 7%;
+    margin: 10% 13%;
     width: 43%;
     z-index: 2;
   }
@@ -336,7 +335,7 @@ a {
   @include mq("lg") {
     display: flex;
     position: absolute;
-    margin: 50% 0 0 55%;
+    margin: 50% 0 0 65%;
     width: 20%;
     z-index: 2;
   }
@@ -346,7 +345,7 @@ a {
   @include mq("lg") {
     position: absolute;
     display: flex;
-    margin: 70% 0 0 7%;
+    margin: 70% 0 0 13%;
     width: 21%;
     z-index: 2;
   }
@@ -356,7 +355,7 @@ a {
   @include mq("lg") {
     position: absolute;
     display: flex;
-    margin: 110% 0 0 45%;
+    margin: 105% 0 0 50%;
     width: 35%;
     z-index: 2;
   }
@@ -366,8 +365,9 @@ a {
   font-size: 1.7em;
   font-weight: bolder;
   font-family: "Courier", sans-serif;
-  margin: 0 7%;
-  padding: 0;
+  margin: 20% 0% 0 0;
+  padding: 0 5%;
+  text-decoration: underline rgb(128, 66, 156) 4px;
   @include mq("lg") {
     position: relative;
     margin: 165% 0 -15% 15%;
@@ -377,8 +377,12 @@ a {
 }
 
 .footer {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Avenir Next Condensed", sans-serif;
+  margin: 30% 0 0 0;
+  padding: 0 5%;
+  text-decoration: underline 1px black;
+  letter-spacing: 0.1em;
   @include mq("lg") {
     margin: -5% 0% 0% 50%;
     padding: 0;
@@ -390,6 +394,8 @@ a {
 .footer1 {
   list-style: $line-style;
   width: 60%;
+  margin: 0;
+  padding: 0 5%;
   @include mq("lg") {
     margin: -1% 0% 0% 50%;
     padding: 0%;
@@ -404,12 +410,14 @@ a {
     }
   }
 }
-.footer2 a {
+.footer2 {
   text-decoration: underline black;
   color: black;
   font-family: "Avenir Next Condensed", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
   @include mq("lg") {
+    text-decoration: $text-decoration;
     font-size: 1.8em;
     margin: 0;
     padding: 0;
