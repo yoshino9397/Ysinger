@@ -106,6 +106,8 @@ body {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
   font-weight: 260;
+  letter-spacing: 1%;
+  margin: -16% 0 0 8%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -123,7 +125,8 @@ body {
   font-size: 3em;
   font-family: "Avenir Next Condensed", sans-serif;
   font-weight: 240;
-  margin: -21% 0 10% 0;
+  letter-spacing: 1%;
+  margin: -5% 0 0% 8%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -140,7 +143,7 @@ body {
 .h3a {
   font-size: 1.7em;
   font-family: "Courier", sans-serif;
-  margin: 30% 0 0 5%;
+  margin: 15% 0 0 8%;
   padding: 0;
 }
 
@@ -151,6 +154,10 @@ body {
     margin: 0 0 0 17%;
     padding: 0;
   }
+}
+
+.photo1 img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -270,6 +277,10 @@ body {
   }
 }
 
+.d1span {
+  opacity: 0;
+}
+
 @media screen and (min-width: 1000px) {
   .d1span {
     width: 100%;
@@ -286,13 +297,12 @@ body {
             align-items: center;
     text-align: center;
     padding: 0;
+    left: -10%;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .d1span {
-    left: -10%;
-  }
+.d1:hover .d1span {
+  opacity: 0;
 }
 
 @media screen and (min-width: 1000px) {
@@ -394,16 +404,10 @@ body {
   .h4 {
     position: relative;
     margin: 165% 0 -15% 15%;
-    -webkit-text-decoration: underline black 4px;
-            text-decoration: underline black 4px;
+    -webkit-text-decoration: underline #80429c 4px;
+            text-decoration: underline #80429c 4px;
     font-size: 2.5em;
   }
-}
-
-.h4 a {
-  -webkit-text-decoration: underline #333fa8 3px;
-          text-decoration: underline #333fa8 3px;
-  color: black;
 }
 
 .footer {
@@ -417,6 +421,8 @@ body {
     padding: 0;
     font-size: 2.5em;
     letter-spacing: 0.2em;
+    -webkit-text-decoration: underline 3px black;
+            text-decoration: underline 3px black;
   }
 }
 
