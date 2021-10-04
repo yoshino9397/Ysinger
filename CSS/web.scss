@@ -15,7 +15,7 @@ $line-style: none;
 $text-decoration: none;
 $margin: 5% 0 0 5%;
 $z-index: 1;
-$opacity: 75%;
+$opacity: 85%;
 
 html {
   @include mq("lg") {
@@ -385,6 +385,7 @@ a {
     font-weight: bold;
     @include mq("lg") {
       text-decoration: underline rgb(128, 66, 156) 4px;
+      font-size: 2.8em;
     }
   }
   @include mq("lg") {
@@ -450,5 +451,6 @@ span {
     display: flex;
     margin: 0 0 -1% 0;
     padding: 0%;
+    opacity: 72%;
   }
 }

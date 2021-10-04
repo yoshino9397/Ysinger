@@ -27,7 +27,6 @@ let h3b = "Biography";
 document.getElementById("h3a").innerHTML = h3a;
 document.getElementById("h3b").innerHTML = h3b;
 
-
 window.addEventListener("scroll", function () {
   let scroll = window.pageYOffset;
   if (scroll > 3300) {
@@ -46,4 +45,3 @@ window.addEventListener("scroll", function () {
     document.body.style.filter = "grayscale(10%)";
   }
 });
-
