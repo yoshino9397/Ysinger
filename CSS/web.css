@@ -18,7 +18,7 @@ body {
 }
 
 img {
-  opacity: 75%;
+  opacity: 85%;
 }
 
 .navphone {
@@ -483,6 +483,7 @@ img {
   .h4 a {
     -webkit-text-decoration: underline #80429c 4px;
             text-decoration: underline #80429c 4px;
+    font-size: 2.8em;
   }
 }
 
@@ -572,6 +573,7 @@ span {
     display: flex;
     margin: 0 0 -1% 0;
     padding: 0%;
+    opacity: 72%;
   }
 }
 /*# sourceMappingURL=web.css.map */
